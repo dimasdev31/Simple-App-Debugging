@@ -7,7 +7,7 @@ const config = require("./src/config");
 const app = express();
 
 app.get("/", (req, res) => {
-  const auth = authService.redirectUri();
+  const auth = authService.redirectUri();  
   res.redirect(auth);
 });
 
